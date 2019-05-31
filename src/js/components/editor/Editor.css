@@ -1,0 +1,9 @@
+.body {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  height: 50vh;
+  font-weight: 100;
+  line-height: 1.2em;
+  border: solid 0 black;
+  background-color: transparent;
+}
