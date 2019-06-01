@@ -2,3 +2,6 @@ html,
 css {
   touch-action: none;
 }
+body {
+  background-color: white;
+}

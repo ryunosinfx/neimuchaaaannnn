@@ -1,6 +1,11 @@
 .header {
-  width:100%;
+  width: 100%;
   background-color: #aaa;
-  padding:0.5em;
-  color:red;
+  padding: 0.5em;
+  height: 1.3urem;
+  color: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
 }

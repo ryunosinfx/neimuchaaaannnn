@@ -1,8 +1,9 @@
 import * as React from "react";
-import Button from "../presentational/Button";
+import { Button } from "../presentational/Button";
 import { PageHeader } from "../Parts/PageHeader";
 import { PageFooter } from "../Parts/PageFooter";
 import { Editor } from "../editor/Editor";
+import * as stylesMain from "./MainContainer.css";
 import * as styles from "../../../css/common.css";
 
 interface Props {}
@@ -12,7 +13,7 @@ interface State {
   style: string;
 }
 
-export default class CounterContainer extends React.Component<Props, State> {
+export class MainContainer extends React.Component<Props, State> {
   public state: State = {
     count: 0,
     style: styles.button
@@ -26,10 +27,10 @@ export default class CounterContainer extends React.Component<Props, State> {
 
   render() {
     return (
-      <div>
+      <div className={stylesMain.body}>
         <PageHeader />
-        <div className={this.state.style}> count: {this.state.count} </div>
         <Editor />
+        <div className={this.state.style}> count: {this.state.count} </div>
         <Button label="count up!" onClick={this.countUp} />
         <PageFooter />
       </div>
