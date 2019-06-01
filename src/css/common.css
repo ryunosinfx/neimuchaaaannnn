@@ -1,11 +1,15 @@
 .button {
-  color:red;
+  color: red;
 }
 .buttonBlue {
-  color:blue;
+  color: blue;
 }
-.container{
-  padding:0;
-  border:solid black 0;
-  margin:0;
+.container {
+  padding: 0;
+  border: solid black 0;
+  margin: 0;
+}
+html,
+css {
+  touch-action: none;
 }
