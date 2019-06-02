@@ -1,24 +1,20 @@
-import * as React from 'react';
-import * as styles from './PageFooter.css';
+import * as React from "react";
+import * as styles from "./EditorBackRow.css";
 
-interface Props { }
-
-interface State {
+interface Props {
+  rowNo: number;
+  type: string;
+  group: string;
 }
 
+interface State {}
+
 export class EditorBackRow extends React.Component<Props, State> {
+  public state: State = {};
 
-  public state: State = {
-  };
-
-  private countUp = () => {
-  }
+  private countUp = () => {};
 
   render() {
-    return (
-      <div className = {styles.footer}>
-        フッターちゃん!!
-      </div>
-    )
+    return <div className={styles.row}>{this.props.rowNo}</div>;
   }
 }

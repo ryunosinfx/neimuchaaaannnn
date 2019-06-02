@@ -54,4 +54,12 @@ body {
   background-color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic",
     YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+  width: 100%;
+}
+div,
+ul,
+li,
+textarea,
+button {
+  box-sizing: border-box;
 }

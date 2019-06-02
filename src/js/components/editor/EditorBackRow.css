@@ -1,0 +1,16 @@
+.row {
+  font-size: 90%;
+  line-height: 1.2rem;
+  width: 100%;
+  font-weight: 100;
+  background-color: aquamarine;
+  padding: 0 0.5rem;
+  /* transform: scale(1); */
+  border: solid 0 black;
+}
+.group1:nth-child(2n-1) {
+  background-color: rgb(188, 255, 175);
+}
+.group1:nth-child(2n) {
+  background-color: rgb(208, 255, 231);
+}

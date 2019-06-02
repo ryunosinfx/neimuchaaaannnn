@@ -1,6 +1,5 @@
 interface webkitHTMLElement extends HTMLElement {
   webkitRequestFullScreen(): void;
-  requestFullScreen(): void;
 }
 
 export class FullScreen {
@@ -10,7 +9,7 @@ export class FullScreen {
     if (body.webkitRequestFullScreen) {
       body.webkitRequestFullScreen();
     } else {
-      body.requestFullScreen();
+      body.requestFullscreen();
     }
   }
   static exit() {

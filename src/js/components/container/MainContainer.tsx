@@ -30,8 +30,10 @@ export class MainContainer extends React.Component<Props, State> {
       <div className={stylesMain.body}>
         <PageHeader />
         <Editor />
-        <div className={this.state.style}> count: {this.state.count} </div>
-        <Button label="count up!" onClick={this.countUp} />
+        <div>
+          <div className={this.state.style}> count: {this.state.count} </div>
+          <Button label="count up!" onClick={this.countUp} />
+        </div>
         <PageFooter />
       </div>
     );
