@@ -5,6 +5,7 @@ interface Props {
   rowNo: number;
   type: string;
   group: string;
+  rowText: string;
 }
 
 interface State {}
@@ -15,6 +16,11 @@ export class EditorBackRow extends React.Component<Props, State> {
   private countUp = () => {};
 
   render() {
-    return <div className={styles.row}>{this.props.rowNo}</div>;
+    return (
+      <div className={styles.row}>
+        <div className={styles.rowNo}>{this.props.rowNo}</div>
+        <div className={styles.rowText}>{this.props.rowText}</div>
+      </div>
+    );
   }
 }

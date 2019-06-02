@@ -17,6 +17,9 @@
   border: solid 0 black;
   background-color: transparent;
   z-index: 100;
+  overflow-wrap: break-word;
+  font-family: inherit;
+  font-weight: inherit;
 }
 .editorRows {
   display: flex;
