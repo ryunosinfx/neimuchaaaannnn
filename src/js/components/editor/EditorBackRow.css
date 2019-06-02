@@ -8,12 +8,20 @@
   border: solid 0 black;
   display: flex;
 }
+.row:nth-child(2n-1) {
+  background-color: rgb(203, 255, 251);
+}
+.row:nth-child(2n) {
+  background-color: rgb(234, 255, 253);
+}
 .rowNo {
   line-height: 1.2rem;
   width: 3.5rem;
   padding: 0 0.5rem;
   text-align: right;
-  font-size: 90%;
+  font-size: 80%;
+  font-weight: bold;
+  color: #ccc;
 }
 .rowText {
   font-family: inherit;
@@ -23,6 +31,7 @@
   line-height: 1.2rem;
   width: calc(100% - 3.5rem);
   overflow-wrap: break-word;
+  color: transparent;
 }
 .group1:nth-child(2n-1) {
   background-color: rgb(188, 255, 175);
