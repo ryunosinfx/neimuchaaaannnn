@@ -7,10 +7,18 @@ import {
 
 interface OwnProps {}
 
-export type MineProps = OwnProps & TitleManagerState & TitleManagerActionsSet;
+export type TitleManagerProps = OwnProps &
+  TitleManagerState &
+  TitleManagerActionsSet;
 
-export const TitleManagerComponent: React.SFC<MineProps> = (
-  props: MineProps
+export const initialTitleManagerState: TitleManagerProps = {
+  name: "",
+  email: "",
+  updateEmail: TitleManagerActions.updateEmail.get(),
+  updateName: TitleManagerActions.updateName.get()
+};
+export const TitleManagerComponent: React.SFC<TitleManagerProps> = (
+  props: TitleManagerProps
 ) => {
   return (
     <div>

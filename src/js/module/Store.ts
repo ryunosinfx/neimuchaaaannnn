@@ -1,15 +1,13 @@
 import { createStore, combineReducers } from "redux";
-import {
-  TitleManagerReduser,
-  TitleManagerState
-} from "./title_manager/TitleManagerReduser";
+import { EditorReduser, EditorState } from "./editor/EditorReduser";
 
 export type AppState = {
-  TitleManager: TitleManagerState;
+  Editor: EditorState;
 };
 
 export const Store = createStore(
   combineReducers<AppState>({
-    TitleManager: TitleManagerReduser
+    Editor: EditorReduser
   })
 );
+export default Store;

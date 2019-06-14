@@ -1,6 +1,6 @@
 import { Dispatch } from "redux";
 import { connect } from "react-redux";
-import { AppState } from "../Store";
+import { AppState1 } from "../Store.1";
 import { TitleManagerAction, TitleManagerActions } from "./TitleManagerActions";
 import { TitleManagerComponent } from "./TitleManagerComponent";
 
@@ -13,7 +13,7 @@ const mapDispatchToProps = (dispatch: Dispatch<TitleManagerAction>) => {
   };
 };
 
-function mapStateToProps(appState: AppState) {
+function mapStateToProps(appState: AppState1) {
   return Object.assign({}, appState.TitleManager);
 }
 
